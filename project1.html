@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Security Lab with pfSense and VLANs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Network Security Lab with pfSense and VLANs</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>In this project, I set up a lab environment with pfSense as the firewall, VLANs, and various security tools like Wazuh and Kali Linux.</p>
+    </section>
+    
+    <section>
+      <h2>Objectives</h2>
+      <ul>
+        <li>Configure pfSense with multiple VLANs (1, 10, 20, 30).</li>
+        <li>Isolate devices in different VLANs for security testing.</li>
+        <li>Install security tools in different VLANs, like Wazuh, Kali, and Docker containers (DVWA, WebGoat).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Network Setup</h2>
+      <h3>Hyper-V Configuration</h3>
+      <ul>
+        <li>WAN and LAN setup with pfSense as the virtual firewall.</li>
+        <li>pfSense network IDs: VLAN 1 (LAN), VLAN 10, VLAN 20, VLAN 30.</li>
+        <li>Physical connection to the second laptop for VLAN 1 (LAN).</li>
+      </ul>
+      <!-- Add screenshots -->
+    </section>
+
+    <section>
+      <h2>Screenshots</h2>
+      <img src="screenshots/pfsense_vlans.png" alt="pfSense VLAN Configuration">
+      <!-- Add more screenshots -->
+    </section>
+
+    <section>
+      <h2>Code and Scripts</h2>
+      <pre>
+# Docker Network Configuration for VLAN 30
+docker network create --driver=bridge --subnet=10.10.30.0/24 vlan30-net
+
+# Portainer setup for managing containers
+docker run -d -p 9000:9000 --name=portainer --network=vlan30-net portainer/portainer
+      </pre>
+      <!-- Add more scripts or configuration files -->
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
