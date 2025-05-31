@@ -97,7 +97,7 @@ header {
 /* Mobile Nav (Hidden by default) */
 .nav-links.active {
   position: absolute;
-  top: 65px;
+  top: 65px; /* adjust if your header height changes */
   left: 0;
   right: 0;
   background-color: var(--color-dark);
@@ -116,7 +116,7 @@ header {
   left: 0;
   right: 0;
   height: calc(100vh - 65px);
-  /* (minus header height if you want it directly below the navbar) */
+  /* minus header height so it sits just below navbar */
   z-index: 1;
   background:
     linear-gradient(rgba(31, 50, 81, 0.8), rgba(31, 50, 81, 0.8)),
@@ -127,8 +127,6 @@ header {
   justify-content: center;
   text-align: center;
 }
-
-
 
 .hero-content {
   color: var(--color-light);
@@ -259,14 +257,13 @@ header {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -20px;   /* move more to the left */
-  top: 6px;      /* nudge downward so it lines up next to the date, not on top */
-  width: 14px;   /* you can also shrink it if you prefer */
+  left: -20px;   /* moved left so it doesn’t overlap date */
+  top: 6px;      /* nudged down to align with date text */
+  width: 14px;   /* slightly smaller circle */
   height: 14px;
   background-color: var(--color-secondary);
   border-radius: 50%;
 }
-
 
 .timeline-date {
   font-weight: 600;
@@ -516,6 +513,7 @@ footer {
   RESPONSIVE MEDIA QUERIES
 =====================================*/
 
+/* Tablet / Small Desktop */
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
@@ -524,63 +522,30 @@ footer {
     font-size: 1rem;
   }
   .nav-links {
-    display: none;
+    display: none; /* hide regular nav on tablet/mobile */
   }
   .hamburger {
     display: flex;
   }
 }
 
+/* Mobile / Very Narrow Screens */
 @media screen and (max-width: 576px) {
+  /* Collapse grids into one column */
   .skill-grid,
   .education-grid,
   .project-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  .timeline {
-    padding-left: 1.5rem;
+  .skill-card,
+  .education-card,
+  .project-card {
+    margin: 0 auto;
+    max-width: 90%;
   }
-  .timeline-item::before {
-    left: -7px;
-    width: 14px;
-    height: 14px;
-  }
-}
-/* --------------------------------------------
-   NAVIGATION + HAMBURGER FOR TABLET / PHONE
---------------------------------------------- */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--color-dark);
-    position: absolute;
-    top: 65px; /* adjust if your header height changes */
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .hamburger {
-    display: flex;
-    cursor: pointer;
-  }
-  .nav-links li {
-    margin: 0.75rem 0;
-  }
-  .btn-cv a {
-    display: inline-block;
-    margin-left: 0;
-  }
-}
 
-/* --------------------------------------------
-   HERO TEXT + BUTTON RESIZING FOR SMALLER PHONES
---------------------------------------------- */
-@media (max-width: 576px) {
+  /* Reduce hero text + button padding */
   .hero h1 {
     font-size: 2rem;
   }
@@ -592,51 +557,27 @@ footer {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
-}
 
-/* --------------------------------------------
-   TIMELINE ADJUSTMENTS FOR MOBILE
---------------------------------------------- */
-@media (max-width: 576px) {
+  /* Shrink section padding */
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  /* Timeline adjustments */
   .timeline {
-    padding-left: 1rem;
+    padding-left: 1rem; /* less left padding */
   }
   .timeline-item::before {
-    left: -12px;
-    top: 7px;
-    width: 12px;
+    left: -12px; /* more left so it doesn’t overlap */
+    top: 7px;    /* nudge down a bit */
+    width: 12px; /* smaller circle */
     height: 12px;
   }
   .timeline-date {
     font-size: 0.9rem;
   }
-}
 
-/* --------------------------------------------
-   FORCE SINGLE COLUMN GRIDS ON MOBILE
---------------------------------------------- */
-@media (max-width: 576px) {
-  .skill-grid,
-  .education-grid,
-  .project-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1rem;
-  }
-  .skill-card,
-  .education-card,
-  .project-card {
-    margin: 0 auto;
-    max-width: 90%;
-  }
-}
-
-/* --------------------------------------------
-   REDUCE PADDING + FONTS ON TINY SCREENS
---------------------------------------------- */
-@media (max-width: 576px) {
-  .section {
-    padding: 2rem 1rem;
-  }
+  /* Slightly smaller text in paragraphs/headings */
   .about p,
   .contact-details p,
   .project-details p {
@@ -647,4 +588,3 @@ footer {
     font-size: 1.15rem;
   }
 }
-
