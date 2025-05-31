@@ -81,19 +81,22 @@ header {
   background-color: var(--color-accent);
 }
 
+/* 1) Hide the hamburger on large screens */
 .hamburger {
   display: none;
-  flex-direction: column;
-  cursor: pointer;
 }
 
+/* 2) Style for the hamburger bars */
 .hamburger span {
+  display: block;
   width: 25px;
   height: 3px;
   background-color: var(--color-light);
-  margin-bottom: 5px;
+  margin: 4px 0;
   border-radius: 2px;
+  transition: background-color 0.3s;
 }
+
 
 /* Mobile Nav (Hidden by default) */
 .nav-links.active {
@@ -520,12 +523,8 @@ footer {
 =====================================*/
 
 @media screen and (max-width: 768px) {
-  .hero {
-    height: 60vh;  /* for small screens, 60% of viewport may feel better */
-    margin-top: 65px;
-  }
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .hero p {
     font-size: 1rem;
@@ -534,24 +533,15 @@ footer {
 
 @media screen and (max-width: 576px) {
   .hero {
-    height: 50vh;  /* shrink further on very small phones */
-    margin-top: 65px;
+    height: 60vh;     /* shorter on very small screens */
   }
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .hero p {
     font-size: 0.9rem;
   }
 }
-  /* Reduce hero text + button padding */
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
   .btn {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
