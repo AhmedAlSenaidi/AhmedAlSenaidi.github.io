@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Al-Senaidi - Portfolio</title>
+    <title>Ahmed Al-Senaidi | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,119 +12,94 @@
             <div class="logo">AHMED AL-SENAIDI</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li><!--
-                <li><a href="#contact">Contact</a></li>-->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero" class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Ahmed</span></h1>
-            <p>Final-Year Computer Science Student | Cybersecurity Enthusiast</p>
-            <a href="#projects" class="btn">View My Projects</a>
+            <h1>Hi, I'm <span class="highlight">Ahmed</span></h1>
+            <p>Cybersecurity & Infrastructure Student | SOC Intern | Final Year @ SQU</p>
+            <a href="#projects" class="btn">Explore Projects</a>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hi, I’m Ahmed Al Senaidi, a final-year Computer Science student with a focus on Cybersecurity and Computing Infrastructure. This portfolio highlights the projects I’ve undertaken, showcasing my ability to tackle real-world challenges and apply technical skills effectively. As I approach graduation, I’m eager to bring my problem-solving mindset and enthusiasm for cybersecurity to innovative teams. Explore my work below, and feel free to connect!
-
+            <p>I’m a final-year Computer Science student specializing in <strong>Cybersecurity and Computing Infrastructure</strong>.
+                I’ve built advanced security labs, completed CTFs, and developed hands-on experience with pfSense, Wazuh, Docker, and Zero Trust architecture.
+                I'm currently interning at Oman Electricity Transmission Company as a SOC analyst and preparing for Security+.
+                I’m eager to contribute to organizations focused on critical infrastructure security.
             </p>
         </div>
     </section>
 
     <section id="projects" class="projects">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <!-- Project Card -->
-            <div class="project-card">
-                <img src="images/wlan_diagram.png" alt="Network Diagram">
-                <h3>WLAN Network Design and Configuration</h3>
-                <p>
-                    Designed and configured a secure Wireless Local Area Network (WLAN) for a two-floor company, 
-                    focusing on VLANs, RADIUS-based authentication, and differentiated access control.
-                </p>
-                <ul>
-                    <li>Segmented network using VLANs for HR, IT, and trainees.</li>
-                    <li>Configured RADIUS server for secure authentication.</li>
-                    <li>Implemented WPA2-PSK for guest access.</li>
-                </ul>
-                <a href="https://github.com/ahmedAlsenaidi/WLAN-Design" target="_blank" class="btn">View Project</a>
-            </div>
-            <!-- Project Card -->
-            <div class="project-card">
-                <img src="images/wsn_dashboard.png" alt="WSN Dashboard Screenshot">
-                <h3>Industrial IoT WSN Monitoring with Docker, MQTT, InfluxDB & Grafana</h3>
-                <p>
-                    Designed a containerized Wireless Sensor Network (WSN) simulation for IIoT monitoring using Docker,
-                    MQTT for messaging, InfluxDB for time-series storage, and Grafana for live dashboards and alerts.
-                </p>
-                <ul>
-                    <li>Simulated environmental data across two zones (temperature, humidity, etc.).</li>
-                    <li>Used MQTT (Mosquitto) for lightweight communication between sensors and backend.</li>
-                    <li>Stored data in InfluxDB and visualized it in Grafana with alert thresholds.</li>
-                </ul>
-                <a href="https://github.com/AhmedAlSenaidi/Industrial-IoT-Wireless-Sensor-Network-WSN" target="_blank" class="btn">View Project</a>
-            </div>
-            <!-- Project Card -->
-            <div class="project-card">
-                <img src="images/FYP-ICS-Testbed.jpg" alt="ICS Testbed Architecture">
-                <h3>Secure ICS Cybersecurity Testbed</h3>
-                <p>
-                    Developed a fully virtualized Industrial Control System (ICS) testbed based on the Purdue Model,
-                    incorporating open-source tools like pfSense, Suricata, and Wazuh to simulate, secure, and monitor
-                    industrial traffic.
-                </p>
-                <ul>
-                    <li>Applied Zero Trust principles with strict segmentation (IT, DMZ, OT zones).</li>
-                    <li>Secured Modbus TCP using TLS and monitored attacks via Suricata IDS.</li>
-                    <li>Used Wazuh SIEM for centralized log analysis and event correlation.</li>
-                </ul>
-                <a href="https://github.com/AhmedAlSenaidi/Secure-ICS-Testbed-Zero-Trust-Encrypted-Traffic" target="_blank" class="btn">View Project</a>
-            </div>
-            <!-- Project Card -->
-            <div class="project-card">
-                <h3>Cybersecurity Virtual Lab with pfSense, Wazuh & Docker</h3>
-                <p>
-                    Designed a self-contained virtual cybersecurity lab using Hyper-V, pfSense, Wazuh, Docker, and Portainer.
-                    The lab simulates enterprise-grade network segmentation, monitoring, and vulnerability testing across multiple VLANs.
-                </p>
-                <ul>
-                    <li>Segmented VLANs for Admin, Testing, Windows, and Docker environments.</li>
-                    <li>Deployed Wazuh SIEM for real-time alerting and log aggregation.</li>
-                    <li>Configured and tested DVWA, bWAPP, and WebGoat using Docker + Portainer.</li>
-                </ul>
-                <a href="https://github.com/AhmedAlSenaidi/Cybersecurity-Project-Lab" target="_blank" class="btn">View Project</a>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
-    
-<!--
-    <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to connect, feel free to reach out to me!</p>
-            <form action="https://formspree.io/f/[your-form-id]" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
+            <h2>Projects</h2>
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/FYP-ICS-Testbed.jpg" alt="ICS Testbed Architecture">
+                    <h3>Secure ICS Cybersecurity Testbed (FYP)</h3>
+                    <p>Built a full ICS security simulation using pfSense, Wazuh, Suricata, and TLS to protect Modbus SCADA systems. Applied Zero Trust and conducted attack simulations using Metasploit.</p>
+                    <ul>
+                        <li>Segmented networks into IT, DMZ, and OT zones.</li>
+                        <li>Used Suricata IDS & Wazuh SIEM for real-time defense.</li>
+                        <li>Validated resilience via 8 test cases.</li>
+                    </ul>
+                    <a href="https://github.com/AhmedAlSenaidi/Secure-ICS-Testbed-Zero-Trust-Encrypted-Traffic" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/cyber_lab_dashboard.png" alt="Cybersecurity Lab Screenshot">
+                    <h3>Cybersecurity Virtual Lab</h3>
+                    <p>Simulated a segmented enterprise network using pfSense, Docker, Wazuh, AD, and attack tools on Hyper-V and VMware. Designed for log analysis, VLAN security, and containerized threat testing.</p>
+                    <ul>
+                        <li>Deployed DVWA, WebGoat, bWAPP via Portainer.</li>
+                        <li>SIEM monitoring and multi-host configuration.</li>
+                    </ul>
+                    <a href="https://github.com/AhmedAlSenaidi/Cybersecurity-Project-Lab" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="images/wsn_dashboard.png" alt="WSN Screenshot">
+                    <h3>Industrial IoT WSN Monitoring</h3>
+                    <p>Simulated MQTT-based sensor networks with Docker, InfluxDB, and Grafana. Used for visual alerting and real-time environmental metric streaming across two zones.</p>
+                    <ul>
+                        <li>MQTT → InfluxDB → Grafana live pipeline.</li>
+                        <li>Alert rules and Dockerized deployment.</li>
+                    </ul>
+                    <a href="https://github.com/AhmedAlSenaidi/Industrial-IoT-Wireless-Sensor-Network-WSN" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="images/wlan_diagram.png" alt="WLAN Design Diagram">
+                    <h3>WLAN Design with VLANs & RADIUS</h3>
+                    <p>Planned and configured a secure WLAN for a two-floor business. Included VLAN segmentation, WPA2 authentication, and guest access rules.</p>
+                    <ul>
+                        <li>Used RADIUS and VLANs for secure design.</li>
+                        <li>Emulated enterprise-grade access control.</li>
+                    </ul>
+                    <a href="https://github.com/ahmedAlsenaidi/WLAN-Design" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
         </div>
     </section>
--->
+
     <footer>
         <div class="footer-container">
             <p>&copy; 2024 Ahmed Said AlSenaidi. All rights reserved.</p>
             <a href="https://github.com/ahmedAlsenaidi" target="_blank">GitHub</a> | 
-            <a href="https://linkedin.com/in/ahmedalsenaidi" target="_blank">LinkedIn</a>
+            <a href="https://linkedin.com/in/ahmedalsenaidi" target="_blank">LinkedIn</a> |
+            <a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank">Resume</a>
         </div>
     </footer>
 </body>
