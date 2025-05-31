@@ -259,13 +259,14 @@ header {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -9px;
-  top: 0;
-  width: 18px;
-  height: 18px;
+  left: -20px;   /* move more to the left */
+  top: 6px;      /* nudge downward so it lines up next to the date, not on top */
+  width: 14px;   /* you can also shrink it if you prefer */
+  height: 14px;
   background-color: var(--color-secondary);
   border-radius: 50%;
 }
+
 
 .timeline-date {
   font-weight: 600;
