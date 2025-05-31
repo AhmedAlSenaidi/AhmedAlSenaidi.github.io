@@ -251,12 +251,17 @@
 
   <!-- ======== OPTIONAL: HAMBURGER MENU SCRIPT ======== -->
   <script>
-    // Toggle mobile nav
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+  // Wait until the DOM is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
     hamburger.addEventListener('click', () => {
+      // Toggle the "active" class on the UL
       navLinks.classList.toggle('active');
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
