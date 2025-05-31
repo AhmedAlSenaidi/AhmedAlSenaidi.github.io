@@ -1,106 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Al-Senaidi | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed Al-Senaidi | Cybersecurity Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">AHMED AL-SENAIDI</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank">Resume</a></li>
+  <!-- ======== NAVIGATION ======== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">AHMED AL-SENAIDI</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="btn-cv"><a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank">Download CV</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Hi, I’m <span class="highlight">Ahmed</span></h1>
+      <p>Final-Year Computer Science Student<br>Specializing in Cybersecurity & Infrastructure</p>
+      <a href="#contact" class="btn btn-primary">Let’s Connect</a>
+    </div>
+  </section>
+
+  <!-- ======== ABOUT SECTION ======== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I’m a final-year Computer Science student at Sultan Qaboos University, focusing on <strong>Cybersecurity and Computing Infrastructure</strong>. I’ve built and secured complex virtual labs, implemented Zero Trust architectures, and conducted hands-on threat analysis—both in academic and internship environments. Currently, as a SOC Intern at Oman Electricity Transmission Company, I monitor and investigate security events in a live SIEM platform. With graduation just two months away, I’m eager to contribute my problem-solving mindset, strong technical skills, and real-world experience to an innovative cybersecurity team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SKILLS SECTION ======== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>Security Operations</h3>
+          <p>SIEM (Wazuh, LogRhythm) · Incident Response · Threat Hunting</p>
+        </div>
+        <div class="skill-card">
+          <h3>Network Defense</h3>
+          <p>pfSense Firewall · VLAN Design · IDS (Suricata)</p>
+        </div>
+        <div class="skill-card">
+          <h3>ICS/OT Security</h3>
+          <p>SCADA Simulation · Modbus/TCP Encryption · Purdue Model</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud & Virtualization</h3>
+          <p>AWS IAM/VPC · Docker · Hyper-V · VMware</p>
+        </div>
+        <div class="skill-card">
+          <h3>Systems Administration</h3>
+          <p>Windows AD · Group Policy · Ubuntu Server · Kali Linux</p>
+        </div>
+        <div class="skill-card">
+          <h3>CTF & Certifications</h3>
+          <p>RootMe, Agent Sudo, Pickle Rick, Bounty Hacker, Ignite · Security+ (in progress)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== EXPERIENCE SECTION ======== -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline">
+
+        <!-- SOC Intern -->
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2024 – Aug 2024</div>
+          <div class="timeline-content">
+            <h3>Cybersecurity Intern</h3>
+            <h4>Oman Electricity Transmission Company (OETC)</h4>
+            <ul>
+              <li>Monitored and analyzed 300+ security events daily using Wazuh SIEM.</li>
+              <li>Investigated alerts, categorized incidents, and documented response procedures.</li>
+              <li>Conducted malware triage and basic threat hunting leveraging threat intelligence.</li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Ahmed</span></h1>
-            <p>Cybersecurity & Infrastructure Student | SOC Intern | Final Year @ SQU</p>
-            <a href="#projects" class="btn">Explore Projects</a>
+          </div>
         </div>
-    </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I’m a final-year Computer Science student specializing in <strong>Cybersecurity and Computing Infrastructure</strong>.
-                I’ve built advanced security labs, completed CTFs, and developed hands-on experience with pfSense, Wazuh, Docker, and Zero Trust architecture.
-                I'm currently interning at Oman Electricity Transmission Company as a SOC analyst and preparing for Security+.
-                I’m eager to contribute to organizations focused on critical infrastructure security.
-            </p>
+        <!-- Add additional roles here if needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROJECTS SECTION ======== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+
+        <!-- ICS Testbed (FYP) -->
+        <div class="project-card">
+          <img src="images/FYP-ICS-Testbed.jpg" alt="ICS Testbed Architecture">
+          <div class="project-details">
+            <h3>ICS Cybersecurity Testbed (FYP)</h3>
+            <p>A full Zero Trust ICS environment built with pfSense, Wazuh, Suricata, and TLS to protect Modbus SCADA systems. Simulated OT/DMZ/IT zones and validated resilience through 8 real attack scenarios.</p>
+            <ul>
+              <li>Segmented networks into IT, DMZ, and OT zones.</li>
+              <li>Deployed Suricata IDS & Wazuh SIEM for real-time monitoring.</li>
+              <li>Secured Modbus/TCP via stunnel TLS and tested replay/command injection attacks.</li>
+            </ul>
+            <a href="https://github.com/AhmedAlSenaidi/Secure-ICS-Testbed-Zero-Trust-Encrypted-Traffic" target="_blank" class="btn btn-outline">View on GitHub</a>
+          </div>
         </div>
-    </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="images/FYP-ICS-Testbed.jpg" alt="ICS Testbed Architecture">
-                    <h3>Secure ICS Cybersecurity Testbed (FYP)</h3>
-                    <p>Built a full ICS security simulation using pfSense, Wazuh, Suricata, and TLS to protect Modbus SCADA systems. Applied Zero Trust and conducted attack simulations using Metasploit.</p>
-                    <ul>
-                        <li>Segmented networks into IT, DMZ, and OT zones.</li>
-                        <li>Used Suricata IDS & Wazuh SIEM for real-time defense.</li>
-                        <li>Validated resilience via 8 test cases.</li>
-                    </ul>
-                    <a href="https://github.com/AhmedAlSenaidi/Secure-ICS-Testbed-Zero-Trust-Encrypted-Traffic" target="_blank" class="btn">View Project</a>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="images/cyber_lab_dashboard.png" alt="Cybersecurity Lab Screenshot">
-                    <h3>Cybersecurity Virtual Lab</h3>
-                    <p>Simulated a segmented enterprise network using pfSense, Docker, Wazuh, AD, and attack tools on Hyper-V and VMware. Designed for log analysis, VLAN security, and containerized threat testing.</p>
-                    <ul>
-                        <li>Deployed DVWA, WebGoat, bWAPP via Portainer.</li>
-                        <li>SIEM monitoring and multi-host configuration.</li>
-                    </ul>
-                    <a href="https://github.com/AhmedAlSenaidi/Cybersecurity-Project-Lab" target="_blank" class="btn">View Project</a>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="images/wsn_dashboard.png" alt="WSN Screenshot">
-                    <h3>Industrial IoT WSN Monitoring</h3>
-                    <p>Simulated MQTT-based sensor networks with Docker, InfluxDB, and Grafana. Used for visual alerting and real-time environmental metric streaming across two zones.</p>
-                    <ul>
-                        <li>MQTT → InfluxDB → Grafana live pipeline.</li>
-                        <li>Alert rules and Dockerized deployment.</li>
-                    </ul>
-                    <a href="https://github.com/AhmedAlSenaidi/Industrial-IoT-Wireless-Sensor-Network-WSN" target="_blank" class="btn">View Project</a>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <img src="images/wlan_diagram.png" alt="WLAN Design Diagram">
-                    <h3>WLAN Design with VLANs & RADIUS</h3>
-                    <p>Planned and configured a secure WLAN for a two-floor business. Included VLAN segmentation, WPA2 authentication, and guest access rules.</p>
-                    <ul>
-                        <li>Used RADIUS and VLANs for secure design.</li>
-                        <li>Emulated enterprise-grade access control.</li>
-                    </ul>
-                    <a href="https://github.com/ahmedAlsenaidi/WLAN-Design" target="_blank" class="btn">View Project</a>
-                </div>
-            </div>
+        <!-- Cyber Lab -->
+        <div class="project-card">
+          <img src="images/cyber_lab_dashboard.png" alt="Cyber Lab Dashboard">
+          <div class="project-details">
+            <h3>Cybersecurity Virtual Lab</h3>
+            <p>Simulated a segmented enterprise network using pfSense, Docker, Active Directory, and Wazuh SIEM on Hyper-V & VMware. Designed to train and test real-world attack/defense scenarios.</p>
+            <ul>
+              <li>Deployed DVWA, bWAPP, and WebGoat via Portainer.</li>
+              <li>Configured multi-VLAN lab, enforced strict firewall rules, and collected SIEM logs from 4 zones.</li>
+            </ul>
+            <a href="https://github.com/AhmedAlSenaidi/Cybersecurity-Project-Lab" target="_blank" class="btn btn-outline">View on GitHub</a>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Ahmed Said AlSenaidi. All rights reserved.</p>
-            <a href="https://github.com/ahmedAlsenaidi" target="_blank">GitHub</a> | 
-            <a href="https://linkedin.com/in/ahmedalsenaidi" target="_blank">LinkedIn</a> |
-            <a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank">Resume</a>
+        <!-- WSN IoT Monitoring -->
+        <div class="project-card">
+          <img src="images/wsn_dashboard.png" alt="WSN Dashboard">
+          <div class="project-details">
+            <h3>Industrial IoT WSN Monitoring</h3>
+            <p>Built an MQTT-powered sensor simulation with Docker, InfluxDB, and Grafana for real-time environmental metrics and alerts across two zones.</p>
+            <ul>
+              <li>Used Mosquitto MQTT → Python ingestion → InfluxDB → Grafana pipeline.</li>
+              <li>Configured Grafana alerts and custom dashboards for temperature, humidity, air quality, and light intensity.</li>
+            </ul>
+            <a href="https://github.com/AhmedAlSenaidi/Industrial-IoT-Wireless-Sensor-Network-WSN" target="_blank" class="btn btn-outline">View on GitHub</a>
+          </div>
         </div>
-    </footer>
+
+        <!-- WLAN Design -->
+        <div class="project-card">
+          <img src="images/wlan_diagram.png" alt="WLAN Design Diagram">
+          <div class="project-details">
+            <h3>WLAN Design with VLANs & RADIUS</h3>
+            <p>Designed and implemented a secure WLAN for a two-floor company focusing on VLAN segmentation, RADIUS-based authentication, and differentiated access control.</p>
+            <ul>
+              <li>Segmented network into HR, IT, and Trainee VLANs.</li>
+              <li>Configured RADIUS server for WPA2-Enterprise authentication.</li>
+              <li>Implemented guest Wi-Fi with WPA2-PSK on a separate VLAN.</li>
+            </ul>
+            <a href="https://github.com/ahmedAlsenaidi/WLAN-Design" target="_blank" class="btn btn-outline">View on GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== EDUCATION SECTION ======== -->
+  <section id="education" class="education section">
+    <div class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="education-grid">
+
+        <!-- Degree -->
+        <div class="education-card">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <h4>Sultan Qaboos University, Oman</h4>
+          <p>Aug 2021 – June 2025 (final exams pending)</p>
+          <p><strong>Specialization:</strong> Cybersecurity & Computer Infrastructure</p>
+        </div>
+
+        <!-- Certifications -->
+        <div class="education-card">
+          <h3>Certifications & Training</h3>
+          <ul>
+            <li>TryHackMe: Introduction to Cyber Security, Pre-Security (Completed)</li>
+            <li>Let’s Defend: Practical SOC Analyst Training (In Progress)</li>
+            <li>CTF Challenges: RootMe, Bounty Hacker, Anthem, Pickle Rick, Fowsniff, Agent Sudo, Anonforce, Basic Pentesting, Ignite</li>
+            <li>Preparing for CompTIA Security+ & Linux Professional Institute (LPI)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Contact & Connect</h2>
+      <div class="contact-content">
+        <div class="contact-details">
+          <p><strong>Email:</strong> <a href="mailto:ahmedalsenaidi@outlook.com">ahmedalsenaidi@outlook.com</a></p>
+          <p><strong>Phone:</strong> +968 9334 8051</p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ahmedalsenaidi" target="_blank">linkedin.com/in/ahmedalsenaidi</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/ahmedAlsenaidi" target="_blank">github.com/ahmedAlsenaidi</a></p>
+        </div>
+        <form class="contact-form" action="mailto:ahmedalsenaidi@outlook.com" method="POST" enctype="text/plain">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" placeholder="Your Message..." required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Ahmed Said Al†Senaidi. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/ahmedAlsenaidi" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/ahmedalsenaidi" target="_blank">LinkedIn</a> |
+        <a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== OPTIONAL: HAMBURGER MENU SCRIPT ======== -->
+  <script>
+    // Toggle mobile nav
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
