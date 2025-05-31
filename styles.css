@@ -515,38 +515,31 @@ footer {
   RESPONSIVE MEDIA QUERIES
 =====================================*/
 
-/* Tablet / Small Desktop */
 @media screen and (max-width: 768px) {
+  .hero {
+    height: 60vh;  /* for small screens, 60% of viewport may feel better */
+    margin-top: 65px;
+  }
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .hero p {
     font-size: 1rem;
   }
-  .nav-links {
-    display: none; /* hide regular nav on tablet/mobile */
-  }
-  .hamburger {
-    display: flex;
-  }
 }
 
-/* Mobile / Very Narrow Screens */
 @media screen and (max-width: 576px) {
-  /* Collapse grids into one column */
-  .skill-grid,
-  .education-grid,
-  .project-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .hero {
+    height: 50vh;  /* shrink further on very small phones */
+    margin-top: 65px;
   }
-  .skill-card,
-  .education-card,
-  .project-card {
-    margin: 0 auto;
-    max-width: 90%;
+  .hero h1 {
+    font-size: 1.6rem;
   }
-
+  .hero p {
+    font-size: 0.9rem;
+  }
+}
   /* Reduce hero text + button padding */
   .hero h1 {
     font-size: 2rem;
