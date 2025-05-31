@@ -546,3 +546,105 @@ footer {
     height: 14px;
   }
 }
+/* --------------------------------------------
+   NAVIGATION + HAMBURGER FOR TABLET / PHONE
+--------------------------------------------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-dark);
+    position: absolute;
+    top: 65px; /* adjust if your header height changes */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  .nav-links li {
+    margin: 0.75rem 0;
+  }
+  .btn-cv a {
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+
+/* --------------------------------------------
+   HERO TEXT + BUTTON RESIZING FOR SMALLER PHONES
+--------------------------------------------- */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* --------------------------------------------
+   TIMELINE ADJUSTMENTS FOR MOBILE
+--------------------------------------------- */
+@media (max-width: 576px) {
+  .timeline {
+    padding-left: 1rem;
+  }
+  .timeline-item::before {
+    left: -12px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+  }
+  .timeline-date {
+    font-size: 0.9rem;
+  }
+}
+
+/* --------------------------------------------
+   FORCE SINGLE COLUMN GRIDS ON MOBILE
+--------------------------------------------- */
+@media (max-width: 576px) {
+  .skill-grid,
+  .education-grid,
+  .project-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  .skill-card,
+  .education-card,
+  .project-card {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+
+/* --------------------------------------------
+   REDUCE PADDING + FONTS ON TINY SCREENS
+--------------------------------------------- */
+@media (max-width: 576px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+  .about p,
+  .contact-details p,
+  .project-details p {
+    font-size: 0.95rem;
+  }
+  .project-details h3,
+  .education-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
