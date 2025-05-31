@@ -111,19 +111,23 @@ header {
 =====================================*/
 
 .hero {
-  height: 100vh;
-  /* Add background-attachment: fixed so the image stays fixed on scroll */
-  background: 
+  position: fixed;
+  top: 65px; /* if your header is 65px tall */
+  left: 0;
+  right: 0;
+  height: calc(100vh - 65px);
+  /* (minus header height if you want it directly below the navbar) */
+  z-index: 1;
+  background:
     linear-gradient(rgba(31, 50, 81, 0.8), rgba(31, 50, 81, 0.8)),
     url('images/hero-bg.jpg') center/cover no-repeat;
   background-attachment: fixed;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 65px; /* height of fixed header */
 }
+
 
 
 .hero-content {
