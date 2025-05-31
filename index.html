@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ahmed Al-Senaidi | Cybersecurity Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmed Al‐Senaidi | Cybersecurity Portfolio</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ======== NAVIGATION ======== -->
+  <!-- ======== HEADER / NAVIGATION ======== -->
   <header>
     <nav class="navbar">
       <div class="logo">AHMED AL-SENAIDI</div>
-      <!-- Hamburger (hidden on desktop, shown on mobile) -->
+
+      <!-- Hamburger (shown on mobile) -->
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <ul class="nav-links">
+
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="btn-cv"><a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank">Download CV</a></li>
+        <li class="btn-cv">
+          <a href="Ahmed_AlSenaidi_Cybersecurity_Resume.pdf" target="_blank"
+            >Download CV</a
+          >
+        </li>
       </ul>
-      <div class="hamburger">
-        <span></span><span></span><span></span>
-      </div>
     </nav>
   </header>
 
@@ -44,8 +50,11 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Hi, I’m <span class="highlight">Ahmed</span></h1>
-      <p>Final-Year Computer Science Student<br>Specializing in Cybersecurity & Infrastructure</p>
-      <a href="#contact" class="btn btn-primary">Let’s Connect</a>
+      <p>
+        Final-Year Computer Science Student<br />
+        Specializing in Cybersecurity & Infrastructure
+      </p>
+      
     </div>
   </section>
 
@@ -55,7 +64,15 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
         <p>
-          I’m a final-year Computer Science student at Sultan Qaboos University, focusing on <strong>Cybersecurity and Computing Infrastructure</strong>. I’ve built and secured complex virtual labs, implemented Zero Trust architectures, and conducted hands-on threat analysis—both in academic and internship environments. Currently, as a SOC Intern at Oman Electricity Transmission Company, I monitor and investigate security events in a live SIEM platform. With graduation just two months away, I’m eager to contribute my problem-solving mindset, strong technical skills, and real-world experience to an innovative cybersecurity team.
+          I’m a final-year Computer Science student at Sultan Qaboos University,
+          focusing on <strong>Cybersecurity and Computing Infrastructure</strong>.
+          I’ve built and secured complex virtual labs, implemented Zero Trust
+          architectures, and conducted hands-on threat analysis—both in academic
+          and internship environments. Currently, as a SOC Intern at Oman
+          Electricity Transmission Company, I monitor and investigate security
+          events in a live SIEM platform. With graduation just two months away, I’m
+          eager to contribute my problem-solving mindset, strong technical skills,
+          and real-world experience to an innovative cybersecurity team.
         </p>
       </div>
     </div>
@@ -88,7 +105,10 @@
         </div>
         <div class="skill-card">
           <h3>CTF & Certifications</h3>
-          <p>RootMe, Agent Sudo, Pickle Rick, Bounty Hacker, Ignite · Security+ (in progress)</p>
+          <p>
+            RootMe, Agent Sudo, Pickle Rick, Bounty Hacker, Ignite · Security+
+            (in progress)
+          </p>
         </div>
       </div>
     </div>
@@ -99,8 +119,7 @@
     <div class="container">
       <h2 class="section-title">Professional Experience</h2>
       <div class="timeline">
-
-        <!-- SOC Intern -->
+        <!-- Cybersecurity Intern -->
         <div class="timeline-item">
           <div class="timeline-date">Jun 2024 – Aug 2024</div>
           <div class="timeline-content">
@@ -113,8 +132,7 @@
             </ul>
           </div>
         </div>
-
-        <!-- Add additional roles here if needed -->
+        <!-- Add more experiences here if needed -->
       </div>
     </div>
   </section>
@@ -124,65 +142,100 @@
     <div class="container">
       <h2 class="section-title">Featured Projects</h2>
       <div class="project-grid">
-
         <!-- ICS Testbed (FYP) -->
         <div class="project-card">
-          <img src="images/FYP-ICS-Testbed.jpg" alt="ICS Testbed Architecture">
+          <img src="images/FYP-ICS-Testbed.jpg" alt="ICS Testbed Architecture" />
           <div class="project-details">
             <h3>ICS Cybersecurity Testbed (FYP)</h3>
-            <p>A full Zero Trust ICS environment built with pfSense, Wazuh, Suricata, and TLS to protect Modbus SCADA systems. Simulated OT/DMZ/IT zones and validated resilience through 8 real attack scenarios.</p>
+            <p>
+              A full Zero Trust ICS environment built with pfSense, Wazuh,
+              Suricata, and TLS to protect Modbus SCADA systems. Simulated
+              OT/DMZ/IT zones and validated resilience through 8 real attack
+              scenarios.
+            </p>
             <ul>
               <li>Segmented networks into IT, DMZ, and OT zones.</li>
               <li>Deployed Suricata IDS & Wazuh SIEM for real-time monitoring.</li>
               <li>Secured Modbus/TCP via stunnel TLS and tested replay/command injection attacks.</li>
             </ul>
-            <a href="https://github.com/AhmedAlSenaidi/Secure-ICS-Testbed-Zero-Trust-Encrypted-Traffic" target="_blank" class="btn btn-outline">View on GitHub</a>
+            <a
+              href="https://github.com/AhmedAlSenaidi/Secure-ICS-Testbed-Zero-Trust-Encrypted-Traffic"
+              target="_blank"
+              class="btn btn-outline"
+              >View on GitHub</a
+            >
           </div>
         </div>
 
         <!-- Cyber Lab -->
         <div class="project-card">
-          <img src="images/cyber_lab_dashboard.png" alt="Cyber Lab Dashboard">
+          <img src="images/cyber_lab_dashboard.png" alt="Cyber Lab Dashboard" />
           <div class="project-details">
             <h3>Cybersecurity Virtual Lab</h3>
-            <p>Simulated a segmented enterprise network using pfSense, Docker, Active Directory, and Wazuh SIEM on Hyper-V & VMware. Designed to train and test real-world attack/defense scenarios.</p>
+            <p>
+              Simulated a segmented enterprise network using pfSense, Docker,
+              Active Directory, and Wazuh SIEM on Hyper-V & VMware. Designed to
+              train and test real-world attack/defense scenarios.
+            </p>
             <ul>
               <li>Deployed DVWA, bWAPP, and WebGoat via Portainer.</li>
               <li>Configured multi-VLAN lab, enforced strict firewall rules, and collected SIEM logs from 4 zones.</li>
             </ul>
-            <a href="https://github.com/AhmedAlSenaidi/Cybersecurity-Project-Lab" target="_blank" class="btn btn-outline">View on GitHub</a>
+            <a
+              href="https://github.com/AhmedAlSenaidi/Cybersecurity-Project-Lab"
+              target="_blank"
+              class="btn btn-outline"
+              >View on GitHub</a
+            >
           </div>
         </div>
 
         <!-- WSN IoT Monitoring -->
         <div class="project-card">
-          <img src="images/wsn_dashboard.png" alt="WSN Dashboard">
+          <img src="images/wsn_dashboard.png" alt="WSN Dashboard" />
           <div class="project-details">
             <h3>Industrial IoT WSN Monitoring</h3>
-            <p>Built an MQTT-powered sensor simulation with Docker, InfluxDB, and Grafana for real-time environmental metrics and alerts across two zones.</p>
+            <p>
+              Built an MQTT-powered sensor simulation with Docker, InfluxDB, and
+              Grafana for real-time environmental metrics and alerts across two
+              zones.
+            </p>
             <ul>
               <li>Used Mosquitto MQTT → Python ingestion → InfluxDB → Grafana pipeline.</li>
               <li>Configured Grafana alerts and custom dashboards for temperature, humidity, air quality, and light intensity.</li>
             </ul>
-            <a href="https://github.com/AhmedAlSenaidi/Industrial-IoT-Wireless-Sensor-Network-WSN" target="_blank" class="btn btn-outline">View on GitHub</a>
+            <a
+              href="https://github.com/AhmedAlSenaidi/Industrial-IoT-Wireless-Sensor-Network-WSN"
+              target="_blank"
+              class="btn btn-outline"
+              >View on GitHub</a
+            >
           </div>
         </div>
 
         <!-- WLAN Design -->
         <div class="project-card">
-          <img src="images/wlan_diagram.png" alt="WLAN Design Diagram">
+          <img src="images/wlan_diagram.png" alt="WLAN Design Diagram" />
           <div class="project-details">
             <h3>WLAN Design with VLANs & RADIUS</h3>
-            <p>Designed and implemented a secure WLAN for a two-floor company focusing on VLAN segmentation, RADIUS-based authentication, and differentiated access control.</p>
+            <p>
+              Designed and implemented a secure WLAN for a two-floor company
+              focusing on VLAN segmentation, RADIUS-based authentication, and
+              differentiated access control.
+            </p>
             <ul>
               <li>Segmented network into HR, IT, and Trainee VLANs.</li>
               <li>Configured RADIUS server for WPA2-Enterprise authentication.</li>
               <li>Implemented guest Wi-Fi with WPA2-PSK on a separate VLAN.</li>
             </ul>
-            <a href="https://github.com/ahmedAlsenaidi/WLAN-Design" target="_blank" class="btn btn-outline">View on GitHub</a>
+            <a
+              href="https://github.com/ahmedAlsenaidi/WLAN-Design"
+              target="_blank"
+              class="btn btn-outline"
+              >View on GitHub</a
+            >
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -192,7 +245,6 @@
     <div class="container">
       <h2 class="section-title">Education & Certifications</h2>
       <div class="education-grid">
-
         <!-- Degree -->
         <div class="education-card">
           <h3>Bachelor of Science in Computer Science</h3>
@@ -211,7 +263,6 @@
             <li>Preparing for CompTIA Security+ & Linux Professional Institute (LPI)</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -219,7 +270,7 @@
   <!-- ======== CONTACT SECTION ======== -->
   <section id="contact" class="contact section">
     <div class="container">
-      <h2 class="section-title">Contact & Connect</h2>
+      <h2 class="section-title">Contact</h2>
       <div class="contact-content">
         <div class="contact-details">
           <p><strong>Email:</strong> <a href="mailto:ahmedalsenaidi@outlook.com">ahmedalsenaidi@outlook.com</a></p>
@@ -227,12 +278,7 @@
           <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ahmedalsenaidi" target="_blank">linkedin.com/in/ahmedalsenaidi</a></p>
           <p><strong>GitHub:</strong> <a href="https://github.com/ahmedAlsenaidi" target="_blank">github.com/ahmedAlsenaidi</a></p>
         </div>
-        <form class="contact-form" action="mailto:ahmedalsenaidi@outlook.com" method="POST" enctype="text/plain">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" placeholder="Your Message..." required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        
       </div>
     </div>
   </section>
@@ -240,7 +286,7 @@
   <!-- ======== FOOTER ======== -->
   <footer>
     <div class="footer-container">
-      <p>&copy; 2024 Ahmed Said Al†Senaidi. All rights reserved.</p>
+      <p>&copy; 2024 Ahmed Said Al-Senaidi. All rights reserved.</p>
       <div class="footer-links">
         <a href="https://github.com/ahmedAlsenaidi" target="_blank">GitHub</a> |
         <a href="https://linkedin.com/in/ahmedalsenaidi" target="_blank">LinkedIn</a> |
@@ -249,19 +295,16 @@
     </div>
   </footer>
 
-  <!-- ======== OPTIONAL: HAMBURGER MENU SCRIPT ======== -->
+  <!-- ======== JAVASCRIPT: TOGGLE MOBILE MENU ======== -->
   <script>
-  // Wait until the DOM is loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
 
-    hamburger.addEventListener('click', () => {
-      // Toggle the "active" class on the UL
-      navLinks.classList.toggle('active');
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
