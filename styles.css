@@ -112,7 +112,11 @@ header {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(31,50,81, 0.8), rgba(31,50,81, 0.8)), url('images/hero-bg.jpg') center/cover no-repeat;
+  /* Add background-attachment: fixed so the image stays fixed on scroll */
+  background: 
+    linear-gradient(rgba(31, 50, 81, 0.8), rgba(31, 50, 81, 0.8)),
+    url('images/hero-bg.jpg') center/cover no-repeat;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   align-items: center;
@@ -120,6 +124,7 @@ header {
   text-align: center;
   margin-top: 65px; /* height of fixed header */
 }
+
 
 .hero-content {
   color: var(--color-light);
